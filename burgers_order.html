@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Bear Burger's</title>
+  </head>
+  <body class="mt-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar" href="home.html"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+            style="width: 40px"
+            alt="restaurant logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#resto-navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="rest-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Order</a>
+            </li>
+            <li class="nav-item d">
+              <a class="nav-link disabled" tabindex="-1">Shop</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mb-5 mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1 class="display-1">Order Here!</h1>
+          <table class="table">
+            <thead>
+              <tr style="background-color: rgb(255, 200, 99)">
+                <th>Icons</th>
+                <th>Item Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="text-center">
+                <th colspan="3" style="background-color: rgb(255, 229, 182)">
+                  Meals
+                </th>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td>Burger</td>
+                <td>₱ 55.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Fried chicken</td>
+                <td>₱ 55.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Spaghetti</td>
+                <td>₱ 55.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Pizza</td>
+                <td>₱ 150.00</td>
+              </tr>
+
+              <tr class="text-center">
+                <th colspan="3" style="background-color: rgb(255, 229, 182)">
+                  Drinks
+                </th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Coke</td>
+                <td>₱20.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Sprite</td>
+                <td>₱20.00</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Sarsi</td>
+                <td>₱20.00</td>
+              </tr>
+              <tr>
+                <td
+                  colspan="2"
+                  rowspan="3"
+                  style="background-color: rgb(250, 238, 216)"
+                >
+                  All items are subject to tax. No refunds. All items are not
+                  transferable.
+                </td>
+              </tr>
+              <td>Extra rice - ₱20.00</td>
+              <tr>
+                <td>Condiments - ₱20.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="https://www.dellacasapasta.com/images/basil-sauce.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 text-light" style="background-color: black">
+      <div class="row">
+        <h2 class="display-3">Tell Us What You Think!</h2>
+        <div class="col-lg-6">
+          <img
+            src="https://thumbs.dreamstime.com/b/cucumber-burger-ingredients-floating-black-background-isolated-vertical-cucumber-burger-ingredients-floating-bun-cheese-tomato-177814997.jpg"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="col-lg-6 mt-4">
+          <form>
+            <label for="name">Name (optional)</label>
+            <p></p>
+            <input type="text" id="name" name="name" style="width: 400px" />
+            <p></p>
+            <label for="province">Provine (optional)</label>
+            <p></p>
+            <input
+              type="text"
+              id="province"
+              name="province"
+              style="width: 400px"
+            />
+            <p class="mt-3">How many times have you went to our restaurant?</p>
+            <input type="radio" name="select" value="first_time" />This is the
+            first time<br />
+            <input type="radio" name="select" value="second_time" />Second time
+            <br />
+            <input type="radio" name="select" value="third_time" />Third time or
+            more <br />
+            <p class="mt-3">How would you rate the food?</p>
+            <input type="radio" name="select" value="one_star" /> ⭐
+            <input type="radio" name="select" value="two_star" />⭐⭐
+            <input type="radio" name="select" value="three_star" />⭐⭐⭐
+            <input type="radio" name="select" value="four_star" />⭐⭐⭐⭐
+            <input type="radio" name="select" value="five_star" />⭐⭐⭐⭐⭐
+            <p class="mt-3">How would you rate the services?</p>
+
+            <input type="radio" name="rating" value="one_star" /> ⭐
+            <input type="radio" name="rating" value="two_star" />⭐⭐
+            <input type="radio" name="rating" value="three_star" />⭐⭐⭐
+            <input type="radio" name="rating" value="four_star" />⭐⭐⭐⭐
+            <input type="radio" name="rating" value="five_star" />⭐⭐⭐⭐⭐
+            <p></p>
+            <input
+              type="submit"
+              class="btn btn-primary mt-5"
+              type="submit"
+              value="submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row text-center mt-5">
+        <div class="col-lg-12">
+          <p>eugenemagbanua@gmail.com | 09456424950</p>
+        </div>
+      </div>
+      <div class="row mn-5">
+        <div class="col-lg-12 text-center">
+          <img src="facebook.jpg" style="width: 50px" />
+          <img src="instagram.jpg" style="width: 50px" />
+          <img src="twitter.jpg" style="width: 50px" />
+          <img src="youtube.jpg" style="width: 50px" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
